@@ -3,10 +3,11 @@ import React, { cloneElement, useCallback, useState } from 'react';
 import { ModalPortal } from './ModalPortal';
 
 const BottomSheet = ({
+  defaultOpen,
   trigger,
   children,
-}: React.PropsWithChildren<{ trigger: React.ReactElement }>) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+}: React.PropsWithChildren<{ defaultOpen: boolean; trigger: React.ReactElement }>) => {
+  const [isModalOpen, setIsModalOpen] = useState(defaultOpen);
 
   const handleOpenModal = useCallback(() => {
     setIsModalOpen(true);

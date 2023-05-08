@@ -31,7 +31,7 @@ import BottomSheet from 'woowa-conan-modal';
 function App() {
   return (
     <div>
-      <BottomSheet trigger={<button>모달 열기</button>}>
+      <BottomSheet defaultOpen={false} trigger={<button>모달 열기</button>}>
         <h2>제목</h2>
         <p>내용</p>
       </BottomSheet>
