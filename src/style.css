@@ -1,0 +1,30 @@
+.wrapper {
+  position: fixed;
+  bottom: 0;
+}
+
+.backdrop {
+  position: fixed;
+  bottom: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-sheet {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 7px 7px 0px 0px;
+
+  transform: translateY(100%);
+  animation: openBottomSheet 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s forwards;
+}
+
+@keyframes openBottomSheet {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
