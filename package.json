@@ -1,6 +1,6 @@
 {
   "name": "woowa-conan-modal",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "간단한 모달 라이브러리",
   "keywords": [
     "react",
