@@ -1,20 +1,20 @@
 {
   "name": "woowa-conan-modal",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "간단한 모달 라이브러리",
   "keywords": [
     "react",
     "modal",
     "bottomsheet"
   ],
-  "homepage": "https://github.com/cruelladevil/sample-conan-modal",
+  "homepage": "https://github.com/cruelladevil/woowa-conan-modal",
   "bugs": {
-    "url": "https://github.com/cruelladevil/sample-conan-modal/issues",
+    "url": "https://github.com/cruelladevil/woowa-conan-modal/issues",
     "email": "dev.timetravel@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cruelladevil/sample-conan-modal.git"
+    "url": "https://github.com/cruelladevil/woowa-conan-modal.git"
   },
   "license": "MIT",
   "author": {
@@ -26,6 +26,10 @@
     "README.md"
   ],
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist/ && webpack --mode production"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -51,8 +55,5 @@
     "ts-loader": "^9.4.2",
     "webpack": "^5.81.0",
     "webpack-cli": "^5.0.2"
-  },
-  "scripts": {
-    "build": "webpack --mode production"
   }
 }
